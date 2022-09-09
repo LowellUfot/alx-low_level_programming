@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main: prints *"Programming is like building a multilingual puzzle"
- * Return: 0 if it exits properly, non-zero if otherwise
- * This is a short description
+ * main: Entry point
+ * Return: 0 if success, non-zero if otherwise
+ * Description: Short program
  */
 int main(void)
 {
