@@ -20,11 +20,14 @@ int main(void)
 			{
 				putchar (c + '0');
 				putchar (d + '0');
-				putchar (',');
-				putchar (' ');
+
+				if (c != 8 || d != 9)
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
 		}
 	}
-	putchar ('\n');
 	return (0);
 }
