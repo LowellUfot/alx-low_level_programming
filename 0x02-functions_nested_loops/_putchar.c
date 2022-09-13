@@ -1,18 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  *_putchar - prints characters to stdout
  * @ch: character pointer
  *
- * Return: 0 always
+ * Return: 1 if successful
  */
 
-void _putchar(char *ch)
+int _putchar(char c)
 {
-	while (*ch != '\0')
-	{
-		putchar(*ch);
-		ch++;
-	}
-	putchar('\n');
+	return (write(1, &c, 1));
 }
