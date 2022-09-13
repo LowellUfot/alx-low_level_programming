@@ -1,14 +1,13 @@
-#include <stdio.h>                                                                                                      
+#include <stdio.h>
 
 /**
- * _putchar -prints sets of characters to the stdout
- *
- * @ch -points to set of characters to be printed
+ *_putchar - prints characters to stdout
+ * @ch: character pointer
  *
  * Return: 0 always
  */
 
-void _printchar(char *ch)
+void _putchar(char *ch)
 {
 	while (*ch != '\0')
 	{
