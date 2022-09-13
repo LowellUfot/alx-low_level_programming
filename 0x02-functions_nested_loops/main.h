@@ -1,3 +1,5 @@
+#ifndef main.h
+#define main.h
 #include <stdio.h>
 
 /**
@@ -15,5 +17,6 @@ void _putchar(char *ch)
 		ch++;
 	}
 	putchar('\n');
-	return;
 }
+
+#endif
