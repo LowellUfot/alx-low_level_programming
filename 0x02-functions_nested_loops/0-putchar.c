@@ -8,11 +8,11 @@
  * Return: 0 if successful
  */
 
-int _putchar(char);
+void _putchar(char *ch);
 
 int main(void)
 {
-	char a;
+	char a[] = "_putchar";
 
 	_putchar(a);
 	return (0);

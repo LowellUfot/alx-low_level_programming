@@ -1,13 +1,19 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to be written to stdout
+ * _putchar - writes the sets of characters ch to stdout
+ * @ch: the set of characters to be written to stdout
  *
  * Return: 0 if successful
  */
 
-int _putchar(char)
+void _putchar(char *ch)
 {
-	return(write(1, "_putchar\n", 9));
+	while (*ch != '\0')
+	{
+		putchar(*ch);
+		ch++;
+	}
+	putchar('\n');
+	return (0);
 }
