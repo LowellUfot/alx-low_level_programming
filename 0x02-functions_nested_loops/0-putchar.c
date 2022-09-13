@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	char a[] = "_putchar";
+	char c[] = "_putchar";
 
-	_putchar(a);
+	_putchar(c);
 	return (0);
 }
