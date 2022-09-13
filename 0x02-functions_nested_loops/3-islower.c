@@ -3,7 +3,7 @@
 
 /**
  * _islower.c - prints lowercase character
- *
+ *@c - argument 
  * Return: 1 if successful, 0 otherwise
  */
 
@@ -11,10 +11,10 @@ int _islower(int c)
 {
 	if (islower(c) == 1)
 	{
-		Return (1);
+		return (1);
 	}
 	else
 	{
-		Return (0);
+		return (0);
 	}
 }
