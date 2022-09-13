@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar - writes the sets of characters ch to stdout
@@ -15,5 +16,5 @@ void _putchar(char *ch)
 		ch++;
 	}
 	putchar('\n');
-	return (0);
+	return;
 }
