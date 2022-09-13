@@ -8,8 +8,6 @@
  * Return: 0 if successful
  */
 
-void _putchar(char *ch);
-
 int main(void)
 {
 	char a[] = "_putchar";
