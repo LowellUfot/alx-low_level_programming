@@ -2,8 +2,9 @@
 #include <ctype.h>
 
 /**
- * _islower.c - prints lowercase character
- *@c - argument 
+ * _islower - prints lowercase character
+ * @c: integer argument
+ *
  * Return: 1 if successful, 0 otherwise
  */
 
