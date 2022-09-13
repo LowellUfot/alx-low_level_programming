@@ -7,7 +7,7 @@
  * Return: 0 if successful
  */
 
-int _putchar(char c)
+int _putchar(char)
 {
 	return(write(1, "_putchar\n", 9));
 }
