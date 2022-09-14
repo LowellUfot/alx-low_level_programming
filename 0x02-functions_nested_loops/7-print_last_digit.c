@@ -10,20 +10,16 @@
 int print_last_digit(int j)
 {
 	int x;
-	int INT_MIN = -2147483648;
 
 	if (j < 0)
 	{
 		j = -j;
 		x = j % 10;
 	}
-	else if (j == INT_MIN)
+	
+	if (x < 0)
 	{
-		x = j % 10;
-	}
-	else
-	{
-		x = j % 10;
+		x = -x;
 	}
 	_putchar (x + '0');
 	return (x);
