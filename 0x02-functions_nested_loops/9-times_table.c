@@ -12,9 +12,9 @@ void times_table(void)
 	int j;
 	int prod;
 
-	for (i = 0; 1 < 10; i++)
+	for (i = 0; 1 <= 9; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			prod = (i * j);
 
@@ -22,14 +22,13 @@ void times_table(void)
 			{
 				_putchar (prod + '0');
 			}
-			else if (prod < 10)
+			else if (prod <= 9)
 			{
 				_putchar (',');
 				_putchar (' ');
-				_putchar (' ');
 				_putchar (prod + '0');
 			}
-			else if (prod >= 10)
+			else if (prod > 9)
 			{
 				_putchar (',');
 				_putchar (' ');
