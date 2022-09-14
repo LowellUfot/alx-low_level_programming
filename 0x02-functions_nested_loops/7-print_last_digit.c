@@ -16,7 +16,7 @@ int print_last_digit(int j)
 		j = -j;
 		x = j % 10;
 	}
-	else if (j == -2147483648)
+	else if (j == INT_MIN)
 	{
 		x = j % 10;
 	}
