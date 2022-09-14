@@ -10,6 +10,7 @@
 int print_last_digit(int j)
 {
 	int x;
+	int INT_MIN = -2147483648;
 
 	if (j < 0)
 	{
