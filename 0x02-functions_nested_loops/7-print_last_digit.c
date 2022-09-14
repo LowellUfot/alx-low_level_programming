@@ -16,6 +16,10 @@ int print_last_digit(int j)
 		j = -j;
 		x = j % 10;
 	}
+	else if (j == -2147483648)
+	{
+		x = j % 10;
+	}
 	else
 	{
 		x = j % 10;
