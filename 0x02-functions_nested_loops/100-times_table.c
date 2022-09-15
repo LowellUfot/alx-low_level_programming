@@ -16,7 +16,7 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 	{
-		exit;
+		exit();
 	}
 	else
 	{
@@ -35,7 +35,7 @@ void print_times_table(int n)
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
-					_putchar ('0' + pro);
+					_putchar ('0' + prod);
 				}
 				else if (prod > 9)
 				{
