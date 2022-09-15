@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * times_table - prints 9 times table
- *
+ * print_times_table - prints 9 times table
+ * @n - int variable to print for
+ * 
  * Return: void
  */
 
-void times_table(void)
+void print_times_table(int n)
 {
 	int i;
 	int j;
