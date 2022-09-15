@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stlib.h>
 
 /**
  * print_times_table - prints 9 times table
