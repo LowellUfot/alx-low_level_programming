@@ -10,17 +10,15 @@ include "main.h"
 
 char *_strcat(char *dest, char *src)
 {
-	int c, d;
+	int a, b;
 
-	c = d = 0;
-	while (*(dest + c))
+	a = b = 0;
+	while (*(dest + a))
+		a++;
+	while ((*(dest + a) = *(src + b)))
 	{
-		c++;
+		a++;
+		b++;
 	}
-	while ((*(dest + c) = *(src + d)))
-	{
-		c++;
-		d++;
-	}
-	return (dest);
+	return(dest);
 }
