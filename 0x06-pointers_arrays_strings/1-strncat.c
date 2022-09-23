@@ -1,14 +1,15 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strcat - concatenates two strings
  * @dest: destination string
  * @src: source string
+ * @n: largest number of bytes to append
  *
  * Return: concatenated string address
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int c, d;
 
