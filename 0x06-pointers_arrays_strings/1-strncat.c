@@ -17,10 +17,15 @@ char *_strcat(char *dest, char *src)
 	{
 		c++;
 	}
-	while ((*(dest + c) = *(src + d)))
+	while (d < n && *(src + d))
 	{
+		*(dest + c) = *(src + d);
 		c++;
 		d++;
+	}
+	if (d < n)
+	{
+		*(dest + c) = *(src + d);
 	}
 	return (dest);
 }
