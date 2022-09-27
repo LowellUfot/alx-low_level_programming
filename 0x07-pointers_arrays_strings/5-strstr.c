@@ -24,8 +24,10 @@ char *_strstr(char *haystack, char *needle)
 			haystack++;
 			bneedle++;
 		}
-		if (!*pneedle)
+		if (!*bneedle)
+		{
 			return (ahaystack);
+		}
 		haystack = ahaystack + 1;
 	}
 	return (0);
