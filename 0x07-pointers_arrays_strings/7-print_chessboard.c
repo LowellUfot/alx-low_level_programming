@@ -3,7 +3,6 @@
 /**
  * print_chessboard - prints chessboard
  * @a: char pointer
- * @8: column count
  */
 
 void print_chessboard(char (*a)[8])
