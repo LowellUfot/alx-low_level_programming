@@ -3,6 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: string
+ *
  * Return: length
  */
 
@@ -20,7 +21,27 @@ int _strlen(char *s)
 
 /**
  * idx_num_starts - find index where a digit is first found in string
+ * @s: string to search
+ * Return: integer index where digit is first found
+ */
+
+int idx_num_starts(char *s)
+{
+	int i;
+
+	for (i = 0; i < _strlen(s); i++)
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+			return (i);
+	}
+	return (-1); /* return -1 if no digits found */
+}
+
+
+/**
+ * find_sign - find index where a digit is first found in string
  * @s: integer
+ *
  * Return: integer 1 or -1
  */
 
@@ -51,38 +72,39 @@ int find_sign(char *s)
 
 int _atoi(char *s)
 {
-	int idx_digit_starts = (idx_num_starts(s));
-	int sign;
-	int digits_to_print = 0;
-	int t = 1, i;
-	unsigned int num = 0;
-	int digit = (idx_num_starts(s));
 
-	if (idx_digit_starts < 0) /* if no digits found, exit program */
-	{
-		return (0);
-		sign = find_sign(s);
-	}
+		int idx_digit_starts = (idx_num_starts(s));
+		int sign;
+		int digits_to_print = 0;
+		int t = 1, i;
+		unsigned int num = 0;
+		int digit = (idx_num_starts(s));
 
-	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
-			&& (idx_digit_starts <= _strlen(s))) /* count digits to print */
-	{
-		digits_to_print += 1;
-		idx_digit_starts++;
-	}
+		if (idx_digit_starts < 0) /* if no digits found, exit program */
+		{
+			return (0);
+			sign = find_sign(s);
+		}
 
-	i = 1;
+		while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
+				&& (idx_digit_starts <= _strlen(s))) /* count digits to print */
+		{
+			digits_to_print += 1;
+			idx_digit_starts++;
+		}
 
-	while (i < digits_to_print) /* find powers of ten to multiply places */
-	{
-		t *= 10;
-		i++;
-	}
+		i = 1;
 
-	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
-	{
-		num += (s[i] - '0') * t;
-		t /= 10;
-	}
-	return (num * sign);
+		while (i < digits_to_print) /* find powers of ten to multiply places */
+		{
+			t *= 10;
+			i++;
+		}
+
+		for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
+		{
+			num += (s[i] - '0') * t;
+			t /= 10;
+		}
+		return (num * sign);
 }

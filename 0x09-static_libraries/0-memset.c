@@ -5,13 +5,14 @@
  * @s: memory area to be filled
  * @b: filled character
  * @n: number of times to fill
+ *
  * Return: s memory area
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	int size;
+	int size = n;
 
 	for (i = 0; i < size; i++)
 	{
@@ -19,3 +20,4 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
+
