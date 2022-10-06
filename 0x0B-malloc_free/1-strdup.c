@@ -19,9 +19,9 @@ char *_strdup(char *str)
 	if (str == NULL) /*validating str parameter*/
 		return (NULL);
 
-	while (*(str + i))
+	while (*(str + len))
 		len++;
-	len = len + 1; /*add the null terminator to length*/
+	len++; /*add the null terminator to length*/
 
 	dup = malloc(len * sizeof(char));
 
