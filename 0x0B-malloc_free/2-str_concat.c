@@ -13,10 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	int len1 = 0;
-	int len2 = 0;
-	int i = 0;
-	int j = 0;
+	int len1 = 0, len2 = 0, i = 0, j = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -28,7 +25,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		len1++;
 	}
-	/*len1++;add null terminator to length*/
 
 	while (*(s2 + len2))/*get length of s2 less null terminator*/
 	{
