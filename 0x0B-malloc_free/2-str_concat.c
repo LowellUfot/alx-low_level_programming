@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len1++;
 	}
-	len1++;/*add null terminator to length*/
+	/*len1++;add null terminator to length*/
 
 	while (*(s2 + len2))/*get length of s2 less null terminator*/
 	{
