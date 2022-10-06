@@ -48,11 +48,9 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 
-	j = i;
-	i = 0;
-	while (i < len2)
+	while (j < len2)
 	{
-		*(concat + j) = *(s2 + i);
+		*(concat + i) = *(s2 + j);
 		j++;
 		i++;
 	}
