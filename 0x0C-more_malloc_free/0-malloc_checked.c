@@ -14,7 +14,8 @@ void *malloc_checked(unsigned int b)
 {
 	void *var;
 
-	var = malloc(sizeof(var) * b); /*allocate memory*/
+	/*var = malloc(sizeof(var) * b); //allocate memory*/
+	var = malloc(b);
 
 	/*validate malloc return*/
 	if (var == NULL)
