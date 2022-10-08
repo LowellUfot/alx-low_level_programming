@@ -24,11 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*determine length of the concatenated string*/
 	if (len2 > (int) n)
 	{
-		len_newstr = len1 + (int) n;
+		len_newstr = len1 + (int) n + 1;
 	}
 	else if ((int) n >= len2)
 	{
-		len_newstr = len1 + len2;
+		len_newstr = len1 + len2 + 1;
 	}
 
 	newstr = malloc(sizeof(char) * len_newstr); /* allocate memory */
