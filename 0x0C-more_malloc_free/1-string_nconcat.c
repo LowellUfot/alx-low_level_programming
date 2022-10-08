@@ -16,11 +16,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len_newstr;
 	unsigned int len1 = 0, len2 = 0, i = 0;
 
-	while (*(s1 + len1) != '\0')
-		len1++;
+	for (len1 = 0; s1[len1] != 0; len1++)
+		;
 
-	while (*(s2 + len2) != '\0')
-		len2++;
+	for (len2 = 0; s2[len2] != 0; len2++)
+		;
+
 	/*determine length of the concatenated string*/
 	if (n > len2)
 		n = len2;
