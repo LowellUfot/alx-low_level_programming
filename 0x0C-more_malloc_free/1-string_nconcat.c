@@ -16,28 +16,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int len_newstr;
 	int len1 = 0, len2 = 0, i = 0, j = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
 	while (*(s1 + len1) != '\0')
 		len1++;
 
 	while (*(s2 + len2) != '\0')
 		len2++;
 	/*determine length of the concatenated string*/
-	if (len2 > (int) n)
-	{
-		len_newstr = len1 + (int) n + 1;
-	}
-	else if ((int) n >= len2)
-	{
-		len_newstr = len1 + len2 + 1;
-	}
+	if (n > len2)
+		n = len2;
+	len_newstr = len1 + n;
 
-	newstr = malloc(len_newstr); /* allocate memory */
+	newstr = malloc(len_newstr + 1); /* allocate memory */
 
 	if (newstr == NULL)
 		return (NULL); /*validate malloc return*/
