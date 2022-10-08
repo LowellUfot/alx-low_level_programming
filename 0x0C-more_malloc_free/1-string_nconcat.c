@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	while (i < len_newstr)
+	while (i < (len_newstr - 1))
 	{
 		*(newstr + i) = *(s2 + j);
 		i++;
