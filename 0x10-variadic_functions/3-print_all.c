@@ -39,7 +39,6 @@ void print_all(const char * const format, ...)
 				if (!str)
 				{
 					printf("%s(nil)", sep);
-					/*flag = 1;*/
 					break;
 				}
 				printf("%s%s", sep, str);
@@ -50,6 +49,5 @@ void print_all(const char * const format, ...)
 			sep = ", ";
 		i++;
 	}
-	printf("\n");
-	va_end(any_args);
+	printf("\n"), va_end(any_args);
 }
