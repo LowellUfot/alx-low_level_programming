@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 				if (!str)
 				{
 					printf("%s(nil)", sep);
-					flag = 1;
+					/*flag = 1;*/
 					break;
 				}
 				printf("%s%s", sep, str);
