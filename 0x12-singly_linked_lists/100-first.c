@@ -5,8 +5,8 @@
  * Return: none
  */
 
-void print_story(void) __attribute__((constructor))
+void _attribute_ ((constructor)) print_story()
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+		printf("You're beat! and yet, you must allow");
+		printf(",\nI bore my house upon my back!\n");
 }
