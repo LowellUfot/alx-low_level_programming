@@ -2,7 +2,8 @@ SETION.data
 msg:	db "Hello, Holberton", 0
 fmt:	db "%s", 10, 0
 
-	SECTION.text
+
+	SECTION .text
 	extern printf
 	global main
 main:
@@ -11,5 +12,5 @@ main:
 	mov eax, 0
 	call printf
 
-	mov eax 0
+	mov eax, 0
 	ret
