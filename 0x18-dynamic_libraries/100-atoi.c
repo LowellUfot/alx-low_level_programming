@@ -1,31 +1,29 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string
- *
- * Return: length
- */
-
-int _strlen(char *s)
-{
-	int l = 0;
-
-	while (*s != '\0')
-	{
-		l++;
-		s++;
-	}
-	return (l);
-}
-
-/**
  * idx_num_starts - find index where a digit is first found in string
  * @s: integer
  *
  * Return: integer 1 or -1
  */
 
+int idx_num_starts(char *s)
+{
+	int i;
+
+	for (i = 0; i < _strlen(s); i++)
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+			return (i);
+	}
+	return (-1);
+}
+
+/**
+ * find_sign - determine if integer is negative
+ * @s: integer
+ * Return: integer 1 or -1
+ */
 int find_sign(char *s)
 {
 	int negatives = 0, i = 0, sign = 1;
