@@ -20,9 +20,9 @@ def island_perimeter(grid):
     for i in range(col_len):
         for j in range(row_len):
             if grid[i][j] == 1:
-                count ++
+                count += 1
                 if (j > 0 and grid[i][j - 1] == 1):
-                    edges ++
+                    edges += 1
                 if (i > 0 and grid[i - 1][j] == 1):
-                    edges ++
+                    edges += 1
     return (count * 4 - edges * 2)
